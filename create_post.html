@@ -16,6 +16,12 @@
         </ul>
         <div id="landing-page">
             <h1>Create Post</h1>
+            <form id="create_post" method="post">
+                <label for="username">Username: </label>
+                <input type="text" id="username" placeholder="Existing User"><br><br>
+                <textarea rows="5" cols="50" id="post_body">Post text body...</textarea><br><br>
+                <input type="submit" value="Create Post" onclick="return check_new_post()">
+            </form>
         </div>
     </body>
 </html>
