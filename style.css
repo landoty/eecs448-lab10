@@ -37,3 +37,8 @@ li a:hover:not(.active) {
     background-color: #555;
     color:white;
 }
+
+.admin_sublist {
+    font-size : 18px;
+    text-align: right;
+}
