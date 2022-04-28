@@ -9,6 +9,12 @@ body {
     height: 1000px;
 }
 
+#user-posts {
+    float: right;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
