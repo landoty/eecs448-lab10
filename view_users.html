@@ -9,14 +9,16 @@
     <body>
         <ul id="navbar">
             <!-- Add href links to each php file-->
-            <li><a class="active"><strong>Blog Website - Home</strong></a></li>
+            <li><a onclick="location.href='./index.html'"><strong>Blog Website - Home</strong></a></li>
             <li><a onclick="location.href='./create_post.html'">Create Post</a></li>
             <li><a onclick="location.href='./create_user.html'">Create User</a></li>
-            <li><a onclick="location.href='./admin_home.html'">Admin</a></li>
+            <li><a class="active">Admin</a></li>
+            <li><a class="admin_sublist" onclick="location.href='./view_users.html'">View Users</a></li>
+            <li><a class="admin_sublist" onclick="location.href='./view_user_posts.html'">View User Posts</a></li>
+            <li><a class="admin_sublist" onclick="location.href='./delete_post.html'">Delete Post</a></li>
         </ul>
         <div id="landing-page">
-            <h1>Blog Post Lab Using MySQL</h1>
-            <h3>Use the tabs on the left to navigate the blog website for EECS448 - Lab 10</h3>
+            <h1>View Users</h1>
         </div>
     </body>
 </html>
