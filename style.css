@@ -6,7 +6,6 @@ body {
 #landing-page {
     margin-left : 25%;
     padding: 1px 16px;
-    height: 1000px;
 }
 
 #user-posts {
@@ -49,12 +48,29 @@ li a:hover:not(.active) {
     text-align: right;
 }
 
-#users_table {
+table {
     border-collapse: collapse;
     border : 1px solid;  
+}
+
+table tr:nth-child(even) {
+    background-color: lightgrey;
+} 
+
+#users_table {
     width : 10%;
 }
 
-#users_table tr:nth-child(even) {
-    background-color: lightgrey;
-} 
+#user_posts {
+    margin-left : 25%;
+    padding : 1px 16px;
+    width : 50%;
+}
+
+#user_posts th, tr, td {
+    border : 1px solid;
+}
+
+h2 {
+    margin-left: 25%;
+}
