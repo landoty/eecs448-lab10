@@ -30,10 +30,24 @@ function check_new_post() {
 }
 
 function alert_delete_posts() {
-    if(confirm("Delete posts?")) {
-        return true;
-    }
-    else {
-        return false;
+    //Checks if any posts are checked to be deleted
+    inputs = document.getElementsByTagName("input")
+    for(let i=0; i<inputs.length-2; i++) {
+        //If any post is selected to be deleted, confirm with user
+        if(inputs[i].checked) {
+            if(confirm("Delete posts?")) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        else if (i==inputs.length-3) {
+            alert("No posts selected");
+            return false;
+        }
+        else {
+            continue;
+        }
     }
 }
