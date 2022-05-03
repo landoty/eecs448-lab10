@@ -14,6 +14,7 @@
         //Get post id, author id, and content from Posts table but only show user content and author. Use post id for form name
         $query = sprintf("select * from Posts");
         $result = $mysqli->query($query);
+        //Iterate through results
         while($row = $result->fetch_assoc()) {
             $content = $row["content"];
             $author = $row["author_id"];
@@ -23,9 +24,11 @@
             //Add checkbox with post id as name
             echo "<td><input type=\"checkbox\" name=\"$id\"></td></tr>";
         }
+        //End table, add submit button and end form
         echo "</table><br><br>";
         echo "<input type=\"submit\" value=\"Delete Posts\" onclick=\"return alert_delete_posts()\">";
         echo "</form>";
+        //Clear the result variable and close connection
         $result->free();
         $mysqli->close();
     }

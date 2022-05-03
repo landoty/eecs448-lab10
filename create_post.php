@@ -23,14 +23,18 @@
                 $message = "<script> alert(\"Cannot post. User: $user does not exist.\")</script>";
                 $result->free();
             }
+            //User does exist, create post
             else {
+                //Create query string and send
                 $query = sprintf("insert into Posts (content, author_id) values ('%s', '%s')", $post_body, $user);
                 $mysqli->query($query);
                 $message = "<script> alert(\"Post created!\")</script>";
             }
+            //Close connection
             $mysqli->close();
         }
     }
+    //Render the create post page and show message (alert)
     include "./create_post.html";
     echo $message;
 ?>

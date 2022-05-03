@@ -10,12 +10,15 @@
         echo $message;
     }
     else {
+        //Create query string and send
         $query = sprintf("select * from Users");
         $result = $mysqli->query($query);
+        //Iterate through results and add table row
         while($row = $result->fetch_assoc()) {
             $user = $row["user_id"];
             echo "<tr><td>$user</td></tr>";
         }
+        //End table, free result and close connection
         echo "</table>";
         $result->free();
         $mysqli->close();

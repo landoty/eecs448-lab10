@@ -12,15 +12,19 @@
         //Create drop down
         echo "<label for=\"user_dropdown\">Select a user: </label>";
         echo "<select name=\"user_dropdown\" id=\"user_dropdown\">";
+        //Create query string and send query
         $query = sprintf("select * from Users");
         $result = $mysqli->query($query);
+        //Iterate through the results
         while($row = $result->fetch_assoc()) {
+            //Add each user as an option in the dropdown
             $user = $row["user_id"];
             echo "<option value=\"$user\">$user</option>";
         }
+        //End select and create input button
         echo "</select><br><br>";
-        //Submit
         echo "<input type=\"submit\" value=\"View Posts\"></form>";
+        //Clear result variable and close connection
         $result->free();
         $mysqli->close();
     }

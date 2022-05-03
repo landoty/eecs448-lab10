@@ -27,9 +27,11 @@
         $message = "<script> alert(\"$message\")</script>";
     }
     else {
+        //Send query and close connection
         $mysqli->query($query);
         $mysqli->close();
     }
+    //Render delete post page and show message (alert)
     include "./delete_post.html";
     echo $message;
 ?>

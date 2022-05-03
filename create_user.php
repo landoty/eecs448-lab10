@@ -20,6 +20,7 @@
                 $message = "<script>alert(\"User: $new_user already exists\")</script>";
             }
         }
+    //Close connection
     $mysqli->close();
     }
      
