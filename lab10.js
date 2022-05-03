@@ -28,3 +28,12 @@ function check_new_post() {
     }
     return true;
 }
+
+function alert_delete_posts() {
+    if(confirm("Delete posts?")) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}

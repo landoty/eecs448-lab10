@@ -71,6 +71,9 @@ table tr:nth-child(even) {
     border : 1px solid;
 }
 
+#post_table {
+    width : 50%;
+}
 h2 {
     margin-left: 25%;
 }
