@@ -42,7 +42,7 @@ function alert_delete_posts() {
                 return false;
             }
         }
-        else if (i==inputs.length-3) {
+        else if (i==inputs.length-2) {
             alert("No posts selected");
             return false;
         }

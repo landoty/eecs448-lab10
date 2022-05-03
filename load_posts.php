@@ -8,7 +8,7 @@
     }
     else {
         //Need form for when admin user selects which user to view posts for
-        echo "<form id=\"delete_posts\" method=\"post\">";
+        echo "<form id=\"delete_posts\" action=\"delete_posts.php\" method=\"post\">";
         //Create table and headers
         echo "<table id=\"post_table\"><tr><th>Content</th><th>Author</th><th>Delete</th></tr>";
         //Get post id, author id, and content from Posts table but only show user content and author. Use post id for form name
