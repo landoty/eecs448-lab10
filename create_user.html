@@ -16,9 +16,9 @@
         </ul>
         <div id="landing-page">
             <h1>Create User</h1>
-            <form id="create_user" method="post">
+            <form id="create_user" action="./create_user.php" method="post">
                 <label for="new_user">New Username:</label>
-                <input type="text" id="new_user">
+                <input type="text" id="new_user" name="new_user">
                 <input type="submit" value="Create User" onclick="return check_new_user()">
             </form>
         </div>
