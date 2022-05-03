@@ -19,9 +19,9 @@
             echo "<option value=\"$user\">$user</option>";
         }
         echo "</select><br><br>";
+        //Submit
+        echo "<input type=\"submit\" value=\"View Posts\"></form>";
         $result->free();
         $mysqli->close();
     }
-    //Submit
-    echo "<input type=\"submit\" value=\"View Posts\"></form>";
 ?>
