@@ -48,3 +48,13 @@ li a:hover:not(.active) {
     font-size : 18px;
     text-align: right;
 }
+
+#users_table {
+    border-collapse: collapse;
+    border : 1px solid;  
+    width : 10%;
+}
+
+#users_table tr:nth-child(even) {
+    background-color: lightgrey;
+} 
